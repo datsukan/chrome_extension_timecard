@@ -4,7 +4,7 @@ check()
 function check () {
 
     // 監視ターゲットの取得
-    const target = document.getElementById('_chatSendToolbar')
+    const target = document.getElementById('_chatSendTool')
 
     // 監視ターゲットが取得できるまで時間を置いて繰り返す
     if (! target) {
