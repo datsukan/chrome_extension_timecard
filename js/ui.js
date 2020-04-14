@@ -4,7 +4,7 @@ check()
 function check () {
 
     // 監視ターゲットの取得
-    const target = document.getElementById('_chatSendTool')
+    const target = document.getElementById('_timeLine')
 
     // 監視ターゲットが取得できるまで時間を置いて繰り返す
     if (! target) {
@@ -53,16 +53,16 @@ function initialize() {
     // 要素を追加
     $("#_chatSendToolbar").children("#_chatSendTool").after(
         `<ul id="timecardItem" class="timecard-Item">\
-            <span\
+            <li\
                 class="timecard-begin-btn"\
                 onClick="timecardBegin()">\
                 業務開始
-            </span>\
-            <span\
+            </li>\
+            <li\
                 class="timecard-finish-btn"\
                 onClick="timecardFinish()">\
                 業務終了
-            </span>\
+            </li>\
         </ul>`
     )
 }
