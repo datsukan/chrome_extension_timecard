@@ -1,25 +1,24 @@
 // DOMの変更を検知してセット
-check()
+check();
 
-function check () {
+function check() {
+  // 監視ターゲットの取得
+  const target = document.getElementById('_timeLine');
 
-    // 監視ターゲットの取得
-    const target = document.getElementById('_chatSendTool')
+  // 監視ターゲットが取得できるまで時間を置いて繰り返す
+  if (!target) {
+    window.setTimeout(check, 500);
+    return;
+  }
 
-    // 監視ターゲットが取得できるまで時間を置いて繰り返す
-    if (! target) {
-        window.setTimeout(check,500)
-        return
-    }
-
-    addScript()
-    initialize()
+  addScript();
+  initialize();
 }
 
 // ページにJavaScript
 function addScript() {
-    $('head').append(
-        '<script>\
+  $('head').append(
+    '<script>\
             function timecardBegin() {\
                 const textarea = document.getElementById("_chatText");\
                 textarea.select();\
@@ -42,27 +41,27 @@ function addScript() {
                 document.getElementsByClassName("chatInput__submit")[0].click();\
             }\
         </script>'
-    )
+  );
 }
 
 // 初期画面上にUIを追加
 function initialize() {
-    // 既存の要素を削除
-    $("#timecardItem").remove()
+  // 既存の要素を削除
+  $('#timecardItem').remove();
 
-    // 要素を追加
-    $("#_chatSendToolbar").children("#_chatSendTool").after(
-        `<ul id="timecardItem" class="timecard-Item">\
-            <span\
+  // 要素を追加
+  $('#_chatSendToolbar').children('#_chatSendTool').after(
+    `<ul id="timecardItem" class="timecard-Item">\
+            <li\
                 class="timecard-begin-btn"\
                 onClick="timecardBegin()">\
                 業務開始
-            </span>\
-            <span\
+            </li>\
+            <li\
                 class="timecard-finish-btn"\
                 onClick="timecardFinish()">\
                 業務終了
-            </span>\
+            </li>\
         </ul>`
-    )
+  );
 }
