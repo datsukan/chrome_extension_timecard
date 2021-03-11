@@ -50,7 +50,7 @@ function initialize() {
   $('#timecardItem').remove();
 
   // 要素を追加
-  $('#_chatSendToolbar').children('#_chatSendTool').after(
+  $('#_chatSendArea').children('.chatInput').children().eq(0).children().eq(0).after(
     `<ul id="timecardItem" class="timecard-Item">\
             <li\
                 class="timecard-begin-btn"\

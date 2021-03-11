@@ -1,7 +1,7 @@
 {
   "name": "Chatwork Timecard Plugin",
   "description": "チャットワークで業務開始・業務終了のメッセージをワンクリックで送信できます。",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "manifest_version": 2,
   "browser_action": {
     "default_title": "Chatwork Timecard Plugin",
