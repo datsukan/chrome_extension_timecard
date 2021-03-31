@@ -38,7 +38,7 @@ function addScript() {
                 window.setTimeout(timecardSubmit,100);\
             }\
             function timecardSubmit() {\
-                document.getElementsByClassName("chatInput__submit")[0].click();\
+                document.getElementsByClassName("sc-bwzfXH wIFvU")[0].click();\
             }\
         </script>'
   );
