@@ -50,8 +50,14 @@ function initialize() {
   $('#timecardItem').remove();
 
   // 要素を追加
-  $('#_chatSendArea').children('.chatInput').children().eq(0).children().eq(0).after(
-    `<ul id="timecardItem" class="timecard-Item">\
+  $('#_chatSendArea')
+    .children()
+    .children()
+    .eq(0)
+    .children()
+    .eq(0)
+    .after(
+      `<ul id="timecardItem" class="timecard-Item">\
             <li\
                 class="timecard-begin-btn"\
                 onClick="timecardBegin()">\
@@ -63,5 +69,5 @@ function initialize() {
                 業務終了
             </li>\
         </ul>`
-  );
+    );
 }
