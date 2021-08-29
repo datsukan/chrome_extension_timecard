@@ -14,3 +14,7 @@ Chrome拡張機能なのでGoogleChromeとMicrosoftEdgeで使用することが�
 # Author \ 著者
 
 神達 小楠
+
+# License \ ライセンス
+
+[MIT License](https://en.wikipedia.org/wiki/MIT_License)
