@@ -38,7 +38,7 @@ function addScript() {
                 window.setTimeout(timecardSubmit,100);\
             }\
             function timecardSubmit() {\
-                document.getElementsByClassName("sc-bwzfXH wIFvU")[0].click();\
+                document.getElementsByClassName("sc-gsDKAQ iCevWA")[0].click();\
             }\
         </script>'
   );
