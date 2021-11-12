@@ -1,5 +1,6 @@
 # Chatwork 勤怠送信 Chrome拡張機能
 
+Chatworkで勤怠連絡を簡単に行えるようにするChrome拡張機能です。  
 Chatworkのメッセージ入力欄上部に勤怠メッセージの自動送信ボタンを追加します。  
 表示するチャットルームを指定することもできます。  
 Chrome拡張機能なのでGoogleChromeとMicrosoftEdgeで使用することができます。
@@ -42,3 +43,7 @@ Zipの状態でchromeウェブストアの管理ページからアップロー�
 # Author \ 著者
 
 神達 小楠
+
+# License \ ライセンス
+
+[MIT License](https://en.wikipedia.org/wiki/MIT_License)
