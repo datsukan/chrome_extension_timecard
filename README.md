@@ -42,7 +42,7 @@ Zipの状態でchromeウェブストアの管理ページからアップロー�
 
 # Author \ 著者
 
-神達 小楠
+datsukan
 
 # License \ ライセンス
 
